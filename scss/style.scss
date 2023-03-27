@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(18, 17, 20);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: space-evenly;
+}
+
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 4em;
+    font-weight: 400;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 90%;
+    background: linear-gradient(130deg, #3306fc, #ae21ff);
+    color: white;
+
+    td {
+        padding: 1.5em;
+    }
+
+    thead {
+        tr {
+            background: linear-gradient(120deg, rgba(128, 65, 255, 0.75), rgba(206, 132, 255, 0.75));
+
+           td:hover{
+                background: #000;
+                color: rgba(206, 132, 255, 0.75);
+            }
+
+            & * td.column_1 {
+                color: red;
+            }
+
+            td:first-child:hover{
+                color:goldenrod;
+            }
+
+            td {
+                font-weight: 500;
+                letter-spacing: 1px;
+                padding: 1.75em;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    tbody {
+
+        tr {
+            &:hover {
+                background: rgba(255, 255, 255, 0.1);
+            }
+
+            td{
+                transition: transform .25s ease-in-out;
+                border-right: 1px solid hsla(0, 0%, 98%, 0.2);
+                border-bottom: 1px solid hsla(0, 0%, 98%, 0.2);
+            }
+
+            
+            td:hover {
+                background: #ae6cff;
+            }
+
+
+            & 
+
+            td:first-child{
+                transition: all .1s linear;
+            }
+
+            td:first-child:hover{
+                background-color: rgb(181, 59, 218);
+                transform:scale(1.05);
+            }
+
+        }
+    }
+
+}
+
+
+.no{
+    background-color: rgb(0, 0, 0);
+}
